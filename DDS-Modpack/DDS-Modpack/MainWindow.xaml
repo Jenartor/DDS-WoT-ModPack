@@ -5,6 +5,9 @@
     <Grid x:Name="grid_welcome" Background="{DynamicResource {x:Static SystemColors.WindowFrameBrushKey}}">
         <Button x:Name="btn_next" Content="Next" HorizontalAlignment="Right" Margin="0,275,45,0" VerticalAlignment="Top" Width="75" Click="btn_next_Click"/>
         <Button x:Name="btn_cancel" Content="Cancel" HorizontalAlignment="Left" Margin="45,275,0,0" VerticalAlignment="Top" Width="75" Click="btn_cancel_Click"/>
-        <Label x:Name="lbl_welcome" Content="Label" Height="260" VerticalAlignment="Top" Width="499" Background="#FFFBFBFB" Margin="10,10,10,10"/>
+        <TextBox x:Name="txtbox_welcome" IsReadOnly="True" Height="100" Margin="0,50,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="300" Background="{DynamicResource {x:Static SystemColors.WindowFrameBrushKey}}" FontSize="14" Focusable="False" BorderThickness="1"/>
+        <Button x:Name="btn_install" Content="Install" HorizontalAlignment="Right" Margin="0,275,45,0" VerticalAlignment="Top" Width="75" Visibility="Hidden"/>
+        <Button x:Name="btn_folder" Content="Choose Folder" Margin="0,155,0,0" VerticalAlignment="Top" Width="90" Click="btn_folder_Click"/>
+        <Label x:Name="lbl_download" Content="" Margin="0,180,0,0" VerticalAlignment="Top" Width="200" FontSize="14"/>
     </Grid>
 </Window>
